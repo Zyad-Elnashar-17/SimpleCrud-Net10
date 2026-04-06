@@ -9,7 +9,7 @@ This project is a lightweight Web API built using ASP.NET Core 10. The primary g
 
 ---
 
-## 🛠️ 2. Tech Stack & Dependencies
+##  2. Tech Stack & Dependencies
 I intentionally selected the following stack for a robust development experience:
 * **Framework:** .NET 10 (ASP.NET Core).
 * **ORM:** Entity Framework Core.
@@ -20,7 +20,7 @@ I intentionally selected the following stack for a robust development experience
 
 ---
 
-## 🏗️ 3. Data Modeling & Architectural Decisions
+##  3. Data Modeling & Architectural Decisions
 The system consists of two main entities: **Category** and **Product**.
 
 ###  Decisions:
@@ -32,7 +32,7 @@ The system consists of two main entities: **Category** and **Product**.
 
 ---
 
-## ⚙️ 4. The CRUD Logic
+##  4. The CRUD Logic
 The controllers follow standard REST principles (`GET`, `POST`, `PUT`, `DELETE`).
 
 ### 5.CategoriesController:
@@ -42,7 +42,7 @@ The controllers follow standard REST principles (`GET`, `POST`, `PUT`, `DELETE`)
 
 ---
 
-## 🚀 5. How to Run the Project
+##  5. How to Run the Project
 1.  **Database Setup:** Open *Package Manager Console* and run:
     ```bash
     Update-Database
