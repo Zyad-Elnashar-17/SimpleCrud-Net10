@@ -1,14 +1,11 @@
-﻿# 🚀 Simple CRUD Web API (.NET 10)
+﻿#  Simple CRUD Web API (.NET 10)
 
-A lightweight and efficient Web API built with **ASP.NET Core 10** to demonstrate RESTful principles, Entity Framework Core integration, and modern C# development practices.
-
+A lightweight and efficient Web API built with **ASP.NET Core 10** to demonstrate RESTful principles and Entity Framework Core 
 ---
 
-## 📌 1. Project Overview
-The primary goal of this project is to manage a **One-to-Many relationship** between **Categories** and **Products**. It serves as a practical implementation of:
-* RESTful API Architecture.
-* Database management with EF Core.
-* Modern C# features (Nullable Reference Types, Async/Sync patterns).
+##  1. Project Overview
+
+This project is a lightweight Web API built using ASP.NET Core 10. The primary goal is to demonstrate a solid understanding of RESTful APIs, Entity Framework Core, and modern C# features. It manages a simple relationship between Categories and Products.
 
 ---
 
@@ -17,16 +14,16 @@ I intentionally selected the following stack for a robust development experience
 * **Framework:** .NET 10 (ASP.NET Core).
 * **ORM:** Entity Framework Core.
 * **Database:** SQL Server.
-* **Documentation & Testing:** * `Swashbuckle.AspNetCore` (Swagger): Manually configured for a visual testing interface.
-    * `Microsoft.EntityFrameworkCore.SqlServer`: For seamless DB connectivity.
-    * `Microsoft.EntityFrameworkCore.Tools`: To manage database migrations.
+* **Microsoft.EntityFrameworkCore.SqlServer:
+* **Microsoft.EntityFrameworkCore.Tools: To manage Migrations.
+* **SwashGen.AspNetCore & SwashUi.AspNetCore (Swagger): Manually configured to provide a visual interface for testing API endpoints, as .NET 10 focuses on a minimal default setup.
 
 ---
 
 ## 🏗️ 3. Data Modeling & Architectural Decisions
 The system consists of two main entities: **Category** and **Product**.
 
-### Key Decisions:
+###  Decisions:
 * **One-to-Many Relationship:** A Category can have multiple Products, while each Product belongs to exactly one Category.
 * **Navigation Properties:** Used `ICollection<Product>` with `new List<Product>()` initialization to prevent `NullReferenceException`.
 * **Nullable Reference Types:** Applied the Null-forgiving operator (`!`) on required properties to ensure the database schema marks them as `NOT NULL` while maintaining code safety.
@@ -35,10 +32,10 @@ The system consists of two main entities: **Category** and **Product**.
 
 ---
 
-## ⚙️ 4. The CRUD Logic & Performance
+## ⚙️ 4. The CRUD Logic
 The controllers follow standard REST principles (`GET`, `POST`, `PUT`, `DELETE`).
 
-### Performance Optimization:
+### 5.CategoriesController:
 * **Asynchronous (Async) GET/PUT:** Used for high-frequency operations to ensure **Scalability**, allowing the server to handle concurrent users without thread locking.
 * **Synchronous (Sync) POST/DELETE:** Implemented for atomic, single-record write operations to simplify state management and debugging in this specific CRUD context.
 * **Pagination:** Used `.Take(10)` in GET requests to optimize the initial data load.
