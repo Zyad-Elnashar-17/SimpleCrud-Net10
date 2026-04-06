@@ -53,5 +53,5 @@ The controllers follow standard REST principles (`GET`, `POST`, `PUT`, `DELETE`)
 
 ---
 
-## 📂 6. Postman Collection
+##  6. Postman Collection
 For professional manual testing, I have included a **Postman Collection** JSON file in the `/Postman` folder. It contains pre-configured requests for all endpoints with sample JSON bodies.
