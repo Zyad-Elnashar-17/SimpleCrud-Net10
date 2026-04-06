@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "d81ca06b-d0ef-4350-94ab-5676d5d30cf9",
+		"name": "SCrud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47901795",
+		"_collection_link": "https://zyad-saeed-s-team.postman.co/workspace/Team-Workspace~2a782140-27eb-4b56-86d2-17dedf21cb8a/collection/47901795-d81ca06b-d0ef-4350-94ab-5676d5d30cf9?action=share&source=collection_link&creator=47901795"
+	},
+	"item": [
+		{
+			"name": "Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Laptops\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44370/Categories",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"Categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44370/Categories",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"Categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateOrPut",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\": 1,\r\n \"title\": \"Updated Electronics\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44370/Categories/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"Categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44370/Categories/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44370",
+					"path": [
+						"Categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
